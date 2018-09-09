@@ -1,11 +1,15 @@
-+++
-title = "docker常用命令"
-slug = "docker-commands"
-date = 2018-02-12T22:21:02+08:00
-description = "docker常用命令集合"
-categories = ["容器"]
-tags = ["docker"]
-+++
+---
+title: docker常用命令
+date: 2018-02-12T22:21:02+08:00
+tags:
+    - docker
+categories:
+    - docker容器
+slug: docker-commands
+description: >
+    docker常用命令集合
+---
+
 
 ### Install docker on mac
 
@@ -24,6 +28,7 @@ Docker version 17.12.0-ce, build c97c6d6
 $ docker-compose --version
 docker-compose version 1.18.0, build 8dd22a9
 ```
+<!--more-->
 
 ```bash
 $ docker-machine --version
@@ -50,6 +55,7 @@ Server:
   OS/Arch:	linux/amd64
   Experimental:	true
 ```
+
 
 ### Basic commands
 

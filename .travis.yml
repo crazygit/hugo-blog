@@ -1,0 +1,25 @@
+os: osx
+git:
+    submodules: true
+branches:
+    only:
+        - master
+before_install:
+  - brew update
+  - brew outdated hugo || brew upgrade hugo
+script:
+  - hugo
+cache:
+  directories:
+    - $HOME/Library/Caches/Homebrew
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  repo: crazygit/crazygit.github.io
+  keep-history: true
+  on:
+    branch: master
+  local_dir: public
+  target_branch: master
+

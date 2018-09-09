@@ -1,12 +1,14 @@
-
-+++
-title = "docker简单入门"
-slug = ""
-date = 2018-02-12T21:15:29+08:00
-description = "Dokcer使用简单入门"
-categories = ["容器"]
-tags = ["docker"]
-+++
+---
+title: docker简单入门
+date: 2018-02-12T21:15:29+08:00
+tags:
+    - docker
+categories:
+    - docker容器
+slug: docker-get-started
+description: >
+    Dokcer使用简单入门
+---
 
 ## Docker安装
 
@@ -25,6 +27,8 @@ Status: Downloaded newer image for hello-world:latest
 Hello from Docker!
 ...
 ```
+
+<!--more-->
 
 ## 创建镜像
 

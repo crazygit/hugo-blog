@@ -1,4 +1,4 @@
-[toc]
+[![Travis Build Status](https://travis-ci.org/crazygit/hugo-blog.svg?branch=master)](https://travis-ci.org/crazygit/hugo-blog)
 
 ## [Soul Mate](http://crazygit.wiseturtles.com/)
 
@@ -15,13 +15,6 @@
 $ hugo version
 Hugo Static Site Generator v0.48/extended darwin/amd64 BuildDate: unknown
 ```
-
-
-### todo
-
-* [ ] 导入原来是用hexo引擎写的文章
-* [ ] 使用utterances评论系统替换disqus
-* [ ] 添加自动部署
 
 ## 参考
 

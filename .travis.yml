@@ -5,8 +5,7 @@ branches:
     only:
         - master
 before_install:
-  - brew update
-  - brew outdated hugo || brew upgrade hugo
+  - brew update && brew bundle
 script:
   - hugo
 cache:

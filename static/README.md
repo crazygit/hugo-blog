@@ -1,5 +1,3 @@
-[toc]
-
 ## [Soul Mate](http://crazygit.wiseturtles.com/)
 
 

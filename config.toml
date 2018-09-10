@@ -76,7 +76,7 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   logoTitle = "Soul Mate"        # default: the title value    # 默认值: 上面设置的title值
   keywords = ["Hugo", "crazygit","blog"]
-  description = "宁静的页，心中一片静谧!"
+  description = "宁静的夜，心中一片静谧!"
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
   archive-paginate = 10
@@ -126,8 +126,8 @@ defaultContentLanguage = "zh-cn"           # Default language to use
     gitmentCSS = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css" crossorigin="anonymous">'
 
   [params.utteranc]         # utteranc is a comment system based on GitHub issues. see https://utteranc.es
-    enable = false
-    repo = "xianmin/comments-for-hugo-theme-jane"    # The repo to store comments
+    enable = true
+    repo = "crazygit/utterances"    # The repo to store comments
     issueTerm = "pathname"
 
   [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment

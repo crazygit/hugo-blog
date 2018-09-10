@@ -1,6 +1,6 @@
 [![Travis Build Status](https://travis-ci.org/crazygit/hugo-blog.svg?branch=master)](https://travis-ci.org/crazygit/hugo-blog)
 
-## [Soul Mate](http://crazygit.wiseturtles.com/)
+## [Soul Mate](https://crazygit.wiseturtles.com/)
 
 
 一个分享技术和生活的博客

@@ -143,9 +143,11 @@ defaultContentLanguage = "zh-cn"           # Default language to use
 
   [params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器
     enable = true
+    show = false
 
   [params.counter.leancloud]  # Chinese leancloud visitor counter  # leancloud 计数器
     enable = true
+    show = true
     appId = "bWUs89CHYswTxwt88Jf71tIF-gzGzoHsz"
     appKey = "IcudhQhVD2eqKqkOTQQ6agUS"
 

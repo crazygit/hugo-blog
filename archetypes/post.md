@@ -1,11 +1,14 @@
-+++
-title = "{{ replace .Name "-" " " | title }}"
-slug = ""
-date = {{ .Date }}
-description = ""
-categories = []
-tags = []
-+++
+---
+title: {{ replace .Name "-" " " | title }}
+slug:
+date: {{ .Date }}
+description:
+categories:
+  -
+tags:
+  -
+---
+
 
 
 <!--more-->

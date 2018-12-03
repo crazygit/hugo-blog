@@ -248,6 +248,24 @@ else {
     assertionFailure("A person's age can't be less than zero.")
 }
 
+var index = 0
+precondition(index > 0, "Index must greater than zero.")
+
+//使用preconditionFailure直接抛出异常
+var age = 0
+if age > 10 {
+    print("You can ride the rollercoaster or the ferris wheel.")
+} else if age > 0{
+    print("You can ride the ferris wheel.")
+}
+else {
+    preconditionFailure("A person's age can't be less than zero.")
+}
+
 ```
+
+**PS**:
+
+当在编译的时候用的是`unchecked mode`(`-Ounckecked`), precondition是不会被执行的，默认它们的条件都是成立的，返回`true`。但是，使`fatalError(_:file:line:)`是会生效的，无论编译参数是什么。
 
 

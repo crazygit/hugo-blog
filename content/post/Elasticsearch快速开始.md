@@ -18,13 +18,14 @@ description: Elasticsearch快速入门, 主要介绍一些Elasticsearch的基本
 
 * Near Realtime (NRT)
 
-    及时搜索，创建文档的索引后无需等待，立刻就可以开始搜索
+    实时搜索，创建文档的索引后无需等待，立刻就可以开始搜索
 
 * Cluster
 
     集群，一个集群可以包含多个节点。需要注意的是集群名字很重要，在同一个网络环境中，节点会自动加入相同集群名的集群。
 
-<!--more-->
+    <!--more-->
+
 * Node
 
     节点，每个节点都有自己的名字，它作为集群的一个单元，拥有数据存储和提供搜索能力等功能。
@@ -44,7 +45,7 @@ description: Elasticsearch快速入门, 主要介绍一些Elasticsearch的基本
 
 ## 安装
 
-这里主要介绍使用docker的安装的方式，主要有三种格式的镜像
+本文主要介绍使用docker的安装的方式，主要有三种格式的镜像
 
 ```bash
 # 基本版本(默认版本)，包含X-pack的基本特性和免费证书
@@ -55,7 +56,7 @@ $ docker pull docker.elastic.co/elasticsearch/elasticsearch-platinum:6.2.3
 $ docker pull docker.elastic.co/elasticsearch/elasticsearch-oss:6.2.3
 ```
 
-这里主要使用oss版本
+选择使用oss版本
 
 ```bash
 # 安装
@@ -770,4 +771,5 @@ networks:
 <https://github.com/elastic/stack-docker/blob/master/docker-compose.yml>
 
 kibana Console运行效果如下：
+
 ![kibana console](http://images.wiseturtles.com/2018-04-12-kibana-devtool.png)

@@ -71,7 +71,6 @@ public class PersonWithoutLomck {
 ```java
 import lombok.Data;
 
-
 @Data
 public class PersonWithLombok {
     private String name;
@@ -165,35 +164,34 @@ public class PersonWithLombok {
 3. 添加`Lombok`到项目依赖。这里根据使用的构建工具不同，操作也不同。
 
 	* 如果使用的是`Gradle`, 在`build.gradle`中添加如下内容:
-	
-	```groovy
-	// 'compile' can be changed to 'compileOnly' for Gradle 2.12+
-	// or 'provided' if using 'propdeps' plugin from SpringSource
-	compile "org.projectlombok:lombok:1.18.8"
-	```
-
+        
+	        ```groovy
+	        // 'compile' can be changed to 'compileOnly' for Gradle 2.12+
+	        // or 'provided' if using 'propdeps' plugin from SpringSource
+	        compile "org.projectlombok:lombok:1.18.8"
+	        ```
 	* 如果使用的是`Maven`，直接在`pom.xml`中添加如下内容,
-	
-	```xml
-	<dependencies>
-	<dependency>
-		<groupId>org.projectlombok</groupId>
-		<artifactId>lombok</artifactId>
-		<version>1.18.8</version>
-		<scope>provided</scope>
-	</dependency>
-</dependencies>
-```
-	
-	* 如果使用的是`Ivy`, 在`ivy.xml`中添加如下内容
+        
+	        ```xml
+	        <dependencies>
+	            <dependency>
+	                <groupId>org.projectlombok</groupId>
+	                <artifactId>lombok</artifactId>
+	                <version>1.18.8</version>
+	                <scope>provided</scope>
+	            </dependency>
+	        </dependencies>
+	        ```
+    * 如果使用的是`Ivy`, 在`ivy.xml`中添加如下内容
 
-	```xml
-<dependency org="org.projectlombok" name="lombok" rev="1.18.8" conf="build" />
-```
+	        ```xml
+	            <dependency org="org.projectlombok" name="lombok" rev="1.18.8" conf="build" />
+	        ```
 
 	* 如果没有使用任何构建工具，那需要手动下载[lombock.jar](https://projectlombok.org/downloads/lombok.jar), 然后在`项目结构`中，把下载的`lombok.jar`添加到项目依赖的`Libraries`中
 
-	![添加lombok.jar到项目的classpath中](http://images.wiseturtles.com/1568771143.png)
+	   	![添加lombok.jar到项目的classpath中](http://images.wiseturtles.com/1568771143.png)
+
 
 4. 创建一个类`PersonWithLombok.java`，测试效果,如下图，从类结构中可以看到，IDE已经自动识别出使用`Lombok`后生成的代码
 

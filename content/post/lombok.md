@@ -101,106 +101,109 @@ public class PersonWithLombok {
 1. 下载最新版本的[lombock.jar](https://projectlombok.org/downloads/lombok.jar)
 2. 创建`PersonWithLombok.java`类文件
 
-	`$ cat PersonWithLombok.java`
-	
-	```java
-	import lombok.Data;
-	
-	
-	@Data
-	public class PersonWithLombok {
-	    private String name;
-	    private int age;
-	}
-	```
+    ```bash
+    $ cat PersonWithLombok.java
+    ```
+
+    ```java
+    import lombok.Data;
+
+
+    @Data
+    public class PersonWithLombok {
+        private String name;
+        private int age;
+    }
+    ```
+
 3. 编译`PersonWithLombok.java`类文件
 
-	```bash
-	$ javac -cp /path/to/lombok.jar PersonWithLombok.java
-	```
+    ```bash
+    $ javac -cp /path/to/lombok.jar PersonWithLombok.java
+    ```
 
-4. 查看生产的`class`文件
+4. 查看生成的`class`文件
 
-	```bash
-	$ javap PersonWithLombok.class
-	```
-	
-	```java
-	Compiled from "PersonWithLombok.java"
-	public class PersonWithLombok {
-	  public PersonWithLombok();
-	  public java.lang.String getName();
-	  public int getAge();
-	  public void setName(java.lang.String);
-	  public void setAge(int);
-	  public boolean equals(java.lang.Object);
-	  protected boolean canEqual(java.lang.Object);
-	  public int hashCode();
-	  public java.lang.String toString();
-	}
-	```
-	
-可以看到自动生成了相关代码
+    ```bash
+    $ javap PersonWithLombok.class
+    ```
+
+    ```java
+    Compiled from "PersonWithLombok.java"
+    public class PersonWithLombok {
+      public PersonWithLombok();
+      public java.lang.String getName();
+      public int getAge();
+      public void setName(java.lang.String);
+      public void setAge(int);
+      public boolean equals(java.lang.Object);
+      protected boolean canEqual(java.lang.Object);
+      public int hashCode();
+      public java.lang.String toString();
+    }
+    ```
+
+	可以看到自动生成了相关代码
 
 
 #### [IntelliJ中使用](https://github.com/mplushnikov/lombok-intellij-plugin)
 
 1. 安装插件
 
-	`Preferences` > `Settings` > `Plugins` > `Browse repositories...` > `Search for "lombok"` > `Install Plugin`
-	
-	然后重启IDE
-	
-	![安装插件](http://images.wiseturtles.com/1568770578.png)
+    `Preferences` > `Settings` > `Plugins` > `Browse repositories...` > `Search for "lombok"` > `Install Plugin`
 
-	
+    然后重启IDE
+
+    ![安装插件](http://images.wiseturtles.com/1568770578.png)
+
 2. 配置IDE的编译器，开启
 
-	`Preferences` -> `Build, Execution, Deployment` -> `Compiler, Annotation Processors`. 点击`Enable Annotation Processing`，并勾选`Obtain processors from project classpath`
-	
-	![配置IDE，启用Annotation Processing](http://images.wiseturtles.com/1568770670.png)
+    `Preferences` -> `Build, Execution, Deployment` -> `Compiler, Annotation Processors`. 点击`Enable Annotation Processing`，并勾选`Obtain processors from project classpath`
+
+    ![配置IDE，启用Annotation Processing](http://images.wiseturtles.com/1568770670.png)
 
 
 3. 添加`Lombok`到项目依赖。这里根据使用的构建工具不同，操作也不同。
 
-	* 如果使用的是`Gradle`, 在`build.gradle`中添加如下内容:
-        
-	        ```groovy
-	        // 'compile' can be changed to 'compileOnly' for Gradle 2.12+
-	        // or 'provided' if using 'propdeps' plugin from SpringSource
-	        compile "org.projectlombok:lombok:1.18.8"
-	        ```
-	* 如果使用的是`Maven`，直接在`pom.xml`中添加如下内容,
-        
-	        ```xml
-	        <dependencies>
-	            <dependency>
-	                <groupId>org.projectlombok</groupId>
-	                <artifactId>lombok</artifactId>
-	                <version>1.18.8</version>
-	                <scope>provided</scope>
-	            </dependency>
-	        </dependencies>
-	        ```
-    * 如果使用的是`Ivy`, 在`ivy.xml`中添加如下内容
+    - 如果使用的是`Gradle`, 在`build.gradle`中添加如下内容:
 
-	        ```xml
-	            <dependency org="org.projectlombok" name="lombok" rev="1.18.8" conf="build" />
-	        ```
+        ```groovy
+        // 'compile' can be changed to 'compileOnly' for Gradle 2.12+
+        // or 'provided' if using 'propdeps' plugin from SpringSource
+        compile "org.projectlombok:lombok:1.18.8"
+         ```
 
-	* 如果没有使用任何构建工具，那需要手动下载[lombock.jar](https://projectlombok.org/downloads/lombok.jar), 然后在`项目结构`中，把下载的`lombok.jar`添加到项目依赖的`Libraries`中
+    - 如果使用的是`Maven`，直接在`pom.xml`中添加如下内容,
 
-	   	![添加lombok.jar到项目的classpath中](http://images.wiseturtles.com/1568771143.png)
+        ```xml
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.8</version>
+                <scope>provided</scope>
+            </dependency>
+        </dependencies>
+        ```
 
+    - 如果使用的是`Ivy`, 在`ivy.xml`中添加如下内容
+
+        ```xml
+        <dependency org="org.projectlombok" name="lombok" rev="1.18.8" conf="build" />
+        ```
+
+    - 如果没有使用任何构建工具，那需要手动下载[lombock.jar](https://projectlombok.org/downloads/lombok.jar), 然后在`项目结构`中，把下载的`lombok.jar`添加到项目依赖的`Libraries`中
+
+        ![添加lombok.jar到项目的classpath中](http://images.wiseturtles.com/1568771143.png)
 
 4. 创建一个类`PersonWithLombok.java`，测试效果,如下图，从类结构中可以看到，IDE已经自动识别出使用`Lombok`后生成的代码
 
-	![效果图](http://images.wiseturtles.com/1568771270.png)
+    ![效果图](http://images.wiseturtles.com/1568771270.png)
 
 
 ### 常用注解介绍
 
-#### `val` 
+#### `val`
 
 作用在局部变量，用于定义一个局部变量，并将它声明为`final`, 不用声明变量类型，它会根据初始赋值自动推动变量类型。**只能用于局部变量或loop循环中，不能用于类的属性**。
 
@@ -216,7 +219,7 @@ public class ValExample {
     val foo = example.get(0);
     return foo.toLowerCase();
   }
-  
+
   public void example2() {
     val map = new HashMap<Integer, String>();
     map.put(0, "zero");
@@ -242,7 +245,7 @@ public class ValExample {
     final String foo = example.get(0);
     return foo.toLowerCase();
   }
-  
+
   public void example2() {
     final HashMap<Integer, String> map = new HashMap<Integer, String>();
     map.put(0, "zero");
@@ -267,7 +270,7 @@ import lombok.NonNull;
 
 public class NonNullExample extends Something {
   private String name;
-  
+
   public NonNullExample(@NonNull Person person) {
     super("Hello");
     this.name = person.getName();
@@ -284,7 +287,7 @@ public class NonNullExample extends Something {
 
 public class NonNullExample extends Something {
   private String name;
-  
+
   public NonNullExample(@NonNull Person person) {
     super("Hello");
     if (person == null) {
@@ -367,21 +370,21 @@ import lombok.Setter;
 public class GetterSetterExample {
   /**
    * Age of the person. Water is wet.
-   * 
+   *
    * @param age New value for this person's age. Sky is blue.
    * @return The current value of this person's age. Circles are round.
    */
   @Getter @Setter private int age = 10;
-  
+
   /**
    * Name of the person.
    * -- SETTER --
    * Changes the name of this person.
-   * 
+   *
    * @param name The new value.
    */
   @Setter(AccessLevel.PROTECTED) private String name;
-  
+
   @Override public String toString() {
     return String.format("%s (age: %d)", name, age);
   }
@@ -401,11 +404,11 @@ public class GetterSetterExample {
    * Name of the person.
    */
   private String name;
-  
+
   @Override public String toString() {
     return String.format("%s (age: %d)", name, age);
   }
-  
+
   /**
    * Age of the person. Water is wet.
    *
@@ -414,7 +417,7 @@ public class GetterSetterExample {
   public int getAge() {
     return age;
   }
-  
+
   /**
    * Age of the person. Water is wet.
    *
@@ -423,7 +426,7 @@ public class GetterSetterExample {
   public void setAge(int age) {
     this.age = age;
   }
-  
+
   /**
    * Changes the name of this person.
    *
@@ -452,15 +455,15 @@ public class ToStringExample {
   private Shape shape = new Square(5, 10);
   private String[] tags;
   @ToString.Exclude private int id;
-  
+
   public String getName() {
     return this.name;
   }
-  
+
   @ToString(callSuper=true, includeFieldNames=true)
   public static class Square extends Shape {
     private final int width, height;
-    
+
     public Square(int width, int height) {
       this.width = width;
       this.height = height;
@@ -480,24 +483,24 @@ public class ToStringExample {
   private Shape shape = new Square(5, 10);
   private String[] tags;
   private int id;
-  
+
   public String getName() {
     return this.getName();
   }
-  
+
   public static class Square extends Shape {
     private final int width, height;
-    
+
     public Square(int width, int height) {
       this.width = width;
       this.height = height;
     }
-    
+
     @Override public String toString() {
       return "Square(super=" + super.toString() + ", width=" + this.width + ", height=" + this.height + ")";
     }
   }
-  
+
   @Override public String toString() {
     return "ToStringExample(" + this.getName() + ", " + this.shape + ", " + Arrays.deepToString(this.tags) + ")";
   }
@@ -518,7 +521,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Log
 public class LogExample {
-  
+
   public static void main(String... args) {
     log.severe("Something's wrong here");
   }
@@ -526,7 +529,7 @@ public class LogExample {
 
 @Slf4j
 public class LogExampleOther {
-  
+
   public static void main(String... args) {
     log.error("Something else is wrong here");
   }
@@ -546,7 +549,7 @@ public class LogExampleCategory {
 ```java
 public class LogExample {
   private static final java.util.logging.Logger log = java.util.logging.Logger.getLogger(LogExample.class.getName());
-  
+
   public static void main(String... args) {
     log.severe("Something's wrong here");
   }
@@ -554,7 +557,7 @@ public class LogExample {
 
 public class LogExampleOther {
   private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(LogExampleOther.class);
-  
+
   public static void main(String... args) {
     log.error("Something else is wrong here");
   }

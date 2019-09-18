@@ -20,16 +20,16 @@ description: >
 
 没有对比就没有伤害。通过定义一个类，让我们来感受下`Lombok`的带来的便利。
 
-不使用`Lombok`定义一个类`PersonWithoutLomck.java`, 虽然大部分代码都是IDE自动生成的，但是看起来仍然特别臃肿。
+不使用`Lombok`定义一个类`PersonWithoutLombok.java`, 虽然大部分代码都是IDE自动生成的，但是看起来仍然特别臃肿。
 
 ```java
-public class PersonWithoutLomck {
+public class PersonWithoutLombok {
     private String name;
     private int age;
 
     @Override
     public String toString() {
-        return "PersonWithoutLomck{" +
+        return "PersonWithoutLombok{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
@@ -61,7 +61,7 @@ public class PersonWithoutLomck {
         this.age = age;
     }
 
-    public PersonWithoutLomck() {
+    public PersonWithoutLombok() {
     }
 }
 ```

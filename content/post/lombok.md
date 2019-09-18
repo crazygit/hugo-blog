@@ -165,7 +165,7 @@ public class PersonWithLombok {
 
 3. 添加`Lombok`到项目依赖。这里根据使用的构建工具不同，操作也不同。
 
-    - 如果使用的是`Gradle`, 在`build.gradle`中添加如下内容:
+    - 如果使用的是`Gradle`, 在`build.gradle`中添加如下内容
 
         ```groovy
         // 'compile' can be changed to 'compileOnly' for Gradle 2.12+
@@ -173,7 +173,7 @@ public class PersonWithLombok {
         compile "org.projectlombok:lombok:1.18.8"
          ```
 
-    - 如果使用的是`Maven`，直接在`pom.xml`中添加如下内容,
+    - 如果使用的是`Maven`，直接在`pom.xml`中添加如下内容
 
         ```xml
         <dependencies>

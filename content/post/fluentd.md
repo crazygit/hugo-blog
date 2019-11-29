@@ -1149,13 +1149,13 @@ volumes:
 最后启动服务
 
 ```bash
-$ docker-compose up
+$ docker-compose up --build
 ```
 
 实际使用中发现，采用上面的方式启动服务后，有时间fluentd没法收集到httpd服务的日志，最后发现原因是如果在fluentd服务还没准备就绪的情况下就启动httpd服务，就会产生这种现象。因此，建议的做法是先启动fluentd, 再启动httpd
 
 ```bash
-$ docker-compose up fluentd
+$ docker-compose up --build fluentd
 # 等fluentd服务就绪后，再启动httpd服务
 $ docker-compose up httpd
 ```

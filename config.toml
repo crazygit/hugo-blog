@@ -138,7 +138,7 @@ defaultContentLanguage = "zh-cn"           # Default language to use
 
   [params.reward]                                         # 文章打赏
     enable = true
-    wechat = "//https://cdn.jsdelivr.net/gh/crazygit/static@main/img/wechatpay.jpg"           # 微信二维码
+    wechat = "https://cdn.jsdelivr.net/gh/crazygit/static@main/img/wechatpay.jpg"           # 微信二维码
     #alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
 
   [params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器

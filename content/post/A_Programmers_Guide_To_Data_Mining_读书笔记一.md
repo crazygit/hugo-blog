@@ -22,7 +22,7 @@ mathjax: true
 
 [如图所示](https://en.wikipedia.org/?title=Collaborative_filtering)
 
-![](http://images.wiseturtles.com/2018-01-19-Collaborative_filtering.gif)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-19-Collaborative_filtering.gif)
 
 <!--more-->
 
@@ -57,7 +57,7 @@ mathjax: true
 
 > 曼哈顿距离，又叫出租车距离（Manhattan Distance）是由十九世纪的赫尔曼·闵可夫斯基所创词汇 ，是种使用在几何度量空间的几何学用语，用以标明两个点在标准坐标系上的绝对轴距总和。
 
-![](http://images.wiseturtles.com/2018-01-22-manhattan.jpg)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-22-manhattan.jpg)
 
 > 图中红线代表曼哈顿距离，绿色代表欧氏距离，也就是直线距离，而蓝色和黄色代表等价的曼哈顿距离。曼哈顿距离——两点在南北方向上的距离加上在东西方向上的距离，即$d(i, j）= |x_i - x_j|+|y_i - y_j|$。对于一个具有正南正北、正东正西方向规则布局的城镇街道，从一点到达另一点的距离正是在南北方向上旅行的距离加上在东西方向上旅行的距离，因此，曼哈顿距离又称为出租车距离。曼哈顿距离不是距离不变量，当坐标轴变动时，点间的距离就会不同。曼哈顿距离示意图在早期的计算机图形学中，屏幕是由像素构成，是整数，点的坐标也一般是整数，原因是浮点运算很昂贵，很慢而且有误差，如果直接使用AB的欧氏距离(欧几里德距离: 在二维和三维空间中的欧氏距离的就是两点之间的距离），则必须要进行浮点运算，如果使用AC和CB，则只要计算加减法即可，这就大大提高了运算速度，而且不管累计运算多少次，都不会有误差。
 
@@ -101,7 +101,7 @@ d_{ab} = \sqrt{\sum\limits_{k=1}^n(x_{1k} - x_{2k})^2}
 
 > 数学上，切比雪夫距离（Chebyshev distance）或是L∞度量是向量空间中的一种度量，二个点之间的距离定义为_其各座标数值差的最大值_。以(x1,y1)和(x2,y2)二点为例，其切比雪夫距离为max(|x2-x1|,|y2-y1|)。切比雪夫距离得名自俄罗斯数学家切比雪夫。
 
-![](http://images.wiseturtles.com/2018-01-22-Chebyshev.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-22-Chebyshev.png)
 
 > 若将国际象棋棋盘放在二维直角座标系中，格子的边长定义为1，座标的x轴及y轴和棋盘方格平行，原点恰落在某一格的中心点，则王从一个位置走到其他位置需要的步数恰为二个位置的切比雪夫距离，因此切比雪夫距离也称为棋盘距离。例如位置F6和位置E2的切比雪夫距离为4。任何一个不在棋盘边缘的位置，和周围八个位置的切比雪夫距离都是1。
 
@@ -151,7 +151,7 @@ $$
 
 > 余弦相似度，又称为余弦相似性，是通过计算两个向量的夹角余弦值来评估他们的相似度。余弦相似度将向量根据坐标值，绘制到向量空间中，如最常见的二维空间。
 
-![](http://images.wiseturtles.com/2018-01-23-cosine-distance.jpg)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-23-cosine-distance.jpg)
 
 * 二维平面上，假设向量a、b的坐标分别为(x1,y1)、(x2,y2) 。则:
 
@@ -175,7 +175,7 @@ $$
 在介绍了一大堆的相似度计算之后，我们来通过一些例子，说明具体的用法。
 假设我们要为一个在线音乐网站的用户推荐乐队。用户可以用1-5颗星来评价他喜欢的乐队，其中包含半颗星(如2.5星)，下表展示了8位用户对8支乐队的评价:
 
-![](http://images.wiseturtles.com/2018-01-23-Recommand-Music-Bannd.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-23-Recommand-Music-Bannd.png)
 
 图中的`-`表示没有评分。在计算两个用户的距离时，只考虑他们都评价过的乐队。暂时不考虑数据缺失的情况。
 

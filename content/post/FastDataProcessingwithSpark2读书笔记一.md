@@ -157,7 +157,7 @@ DataFrame[value: string]
 
 在使用Spark Shell时，也会开启一个Spark monitor UI，默认在本地4040端口运行。
 
-![Spark Monitor UI](http://images.wiseturtles.com/2018-01-11-SparkMonitorUI.png)
+![Spark Monitor UI](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-11-SparkMonitorUI.png)
 
 ### 创建一个简单的应用
 
@@ -244,7 +244,7 @@ ${SPARK_HOME}/python/pyspark/shell.py
 
 我们再来看看这个脚本里有些什么，下图是脚本的部分截图:
 
-![](http://images.wiseturtles.com/2018-01-11-spark_shell.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-11-spark_shell.png)
 
 从红色框里的代码，我们可以看到创建了`SparkSession`对象并赋值给`spark`，`SparkSession`包含了`SparkContext`(`spark.sparkContext`), 并且使用`sc`指向`SparkContext`。
 

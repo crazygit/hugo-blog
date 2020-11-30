@@ -21,23 +21,23 @@ description: >
 
 机器学习算法表
 
-![](http://images.wiseturtles.com/2018-01-17-MachineLearningAlgorithms1.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-17-MachineLearningAlgorithms1.png)
 
-![](http://images.wiseturtles.com/2018-01-17-MachineLearningAlgorithms2.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-17-MachineLearningAlgorithms2.png)
 
 <!--more-->
 
 机器学习处理流程
 
-![](http://images.wiseturtles.com/2018-01-17-MachineLearningProcess.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-17-MachineLearningProcess.png)
 
 机器学习WorkFlow
 
-![](http://images.wiseturtles.com/2018-01-17-MachineLearningWorkflow.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-17-MachineLearningWorkflow.png)
 
 机器学习API结构图
 
-![](http://images.wiseturtles.com/2018-01-17-MachineLearningAPI.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-17-MachineLearningAPI.png)
 
 
 下面部分等待完善

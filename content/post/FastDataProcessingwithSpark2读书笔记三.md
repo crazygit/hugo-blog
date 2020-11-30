@@ -27,7 +27,7 @@ Spark中，Dataset就是一组各式各样的列，类似一张excel表格或关
 
 ### DataSet API概览
 
-![DataSet APIs](http://images.wiseturtles.com/2018-01-16-DataSetAPIs.png)
+![DataSet APIs](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-16-DataSetAPIs.png)
 
 下面的例子使用的数据文件下载地址:
 

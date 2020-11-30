@@ -1296,7 +1296,7 @@ dtype: int64
 >>> plt.show()
 ```
 
-![曲线图](http://images.wiseturtles.com/2017-12-21-plot.png)
+![曲线图](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-21-plot.png)
 
 画图带图例的图
 
@@ -1312,7 +1312,7 @@ dtype: int64
 >>> plt.show()
 ```
 
-![带图例的曲线图](http://images.wiseturtles.com/2017-12-21-plot-lines.png)
+![带图例的曲线图](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-21-plot-lines.png)
 
 
 

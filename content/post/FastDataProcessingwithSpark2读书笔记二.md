@@ -225,7 +225,7 @@ out.txt/part-00001: empty
 
 下图是一个数据掮客的架构:
 
-![Stack Architecture](http://images.wiseturtles.com/2018-01-14-StackArchitecture.png)
+![Stack Architecture](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-14-StackArchitecture.png)
 
 * Data Hub
 * Analytics Hub
@@ -261,7 +261,7 @@ DataFrames, MLlib, GraphX, and ML pipelines 也在这里生成。
 ### Spark Full Stack
 
 
-![Spark Full Stack](http://images.wiseturtles.com/2018-01-15-SparkFullStack.png)
+![Spark Full Stack](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-15-SparkFullStack.png)
 
 
 ### [大数据存储Parquet](https://parquet.apache.org/)
@@ -269,7 +269,7 @@ DataFrames, MLlib, GraphX, and ML pipelines 也在这里生成。
 
 ## Spark SQL
 
-![Spark SQL Architeture](http://images.wiseturtles.com/2018-01-15-SparkSQLArchitecture.png)
+![Spark SQL Architeture](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-15-SparkSQLArchitecture.png)
 
 
 

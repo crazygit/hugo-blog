@@ -19,7 +19,7 @@ description: >
 
 ### Numpy数据类型
 
-![Numpy DataTypes](http://images.wiseturtles.com/2017-12-26-Numpy_data_types.png)
+![Numpy DataTypes](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-26-Numpy_data_types.png)
 
 ### np.where
 

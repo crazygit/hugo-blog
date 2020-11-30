@@ -80,7 +80,7 @@ public class PersonWithLombok {
 
 看看类结构
 
-![看看类结构](http://images.wiseturtles.com/1568769332.png)
+![看看类结构](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/1568769332.png)
 
 一样的效果，使用`Lombok`之后，整个代码看起来是不是更加清爽了呢?
 
@@ -91,7 +91,7 @@ public class PersonWithLombok {
 
 `Lombok`的使用也非常方便，可以直接在`命令行`，`Eclipse`, `IntelliJ`中使用。也方便和`Maven`, `Gradle`集成，`Android`开发中同样适用。具体支持如下：
 
-![Setup](http://images.wiseturtles.com/1568769867.png)
+![Setup](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/1568769867.png)
 
 下面主要介绍下在命令行中和`IntelliJ`中的使用方式，其它的可以直接参考[官方文档](https://projectlombok.org/)，都有非常详细的介绍
 
@@ -154,13 +154,13 @@ public class PersonWithLombok {
 
     然后重启IDE
 
-    ![安装插件](http://images.wiseturtles.com/1568770578.png)
+    ![安装插件](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/1568770578.png)
 
 2. 配置IDE的编译器，开启
 
     `Preferences` -> `Build, Execution, Deployment` -> `Compiler, Annotation Processors`. 点击`Enable Annotation Processing`，并勾选`Obtain processors from project classpath`
 
-    ![配置IDE，启用Annotation Processing](http://images.wiseturtles.com/1568770670.png)
+    ![配置IDE，启用Annotation Processing](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/1568770670.png)
 
 
 3. 添加`Lombok`到项目依赖。这里根据使用的构建工具不同，操作也不同。
@@ -194,11 +194,11 @@ public class PersonWithLombok {
 
     - 如果没有使用任何构建工具，那需要手动下载[lombock.jar](https://projectlombok.org/downloads/lombok.jar), 然后在`项目结构`中，把下载的`lombok.jar`添加到项目依赖的`Libraries`中
 
-        ![添加lombok.jar到项目的classpath中](http://images.wiseturtles.com/1568771143.png)
+        ![添加lombok.jar到项目的classpath中](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/1568771143.png)
 
 4. 创建一个类`PersonWithLombok.java`，测试效果,如下图，从类结构中可以看到，IDE已经自动识别出使用`Lombok`后生成的代码
 
-    ![效果图](http://images.wiseturtles.com/1568771270.png)
+    ![效果图](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/1568771270.png)
 
 
 ### 常用注解介绍

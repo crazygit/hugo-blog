@@ -13,7 +13,7 @@ description: >
 
 fluentd是一个开源的日志收集系统，能够收集各式各样的日志, 并将日志转换成方便机器处理的json格式。
 
-![fluentd日志架构](http://images.wiseturtles.com/1574818088.png)
+![fluentd日志架构](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/1574818088.png)
 
 <!--more-->
 
@@ -1191,7 +1191,7 @@ $ curl http://127.0.0.1/5000
 
 最后可以分别在fluentd的容器的终端，log目录，以及elasticsearch中看到保存的访问记录信息了。如下是通过Kibana面板看到的请求情况
 
-![Kibana面板](http://images.wiseturtles.com/1575000628.png)
+![Kibana面板](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/1575000628.png)
 
 ## 更多
 

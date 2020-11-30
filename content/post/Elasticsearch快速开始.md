@@ -772,4 +772,4 @@ networks:
 
 kibana Console运行效果如下：
 
-![kibana console](http://images.wiseturtles.com/2018-04-12-kibana-devtool.png)
+![kibana console](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-04-12-kibana-devtool.png)

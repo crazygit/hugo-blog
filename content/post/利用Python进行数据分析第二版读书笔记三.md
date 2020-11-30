@@ -418,7 +418,7 @@ two 0  3  4  two  0
 
 不同的Join方式表现行为如下图:
 
-![不同的Join方式](http://images.wiseturtles.com/2018-01-03-join_way.png)
+![不同的Join方式](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-03-join_way.png)
 
 “多对多”的方式, 默认情况下，多对多的结果是“笛卡尔乘积”。
 如下: `df1`的`key`列有3个`b`, `df2`的`key`列有2个`b`。因此结果里会有`3x2=6`个b。 不同的join方式只是会影响结果里key的出现个数，不会影响“笛卡尔乘积”的行为

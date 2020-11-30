@@ -64,11 +64,11 @@ dtype: float64
 >>> s.plot()
 ```
 
-![SeriesPlot](http://images.wiseturtles.com/2018-01-09-series_plot.png)
+![SeriesPlot](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-09-series_plot.png)
 
 默认使用`Series`的`index`作为`x`轴。也可以通过参数`use_index=False`来设置不用`Series`的`index`作为`x`轴。其它可以定制的参数如下:
 
-![Series Plot Method](http://images.wiseturtles.com/2018-01-09-series_plot_method_args.png)
+![Series Plot Method](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-09-series_plot_method_args.png)
 
 `DataFrame`的`plot`方法会把每一列绘制成一条线，并且自动绘制图例
 
@@ -81,10 +81,10 @@ dtype: float64
 >>> df.plot()
 ```
 
-![DataFrame plot](http://images.wiseturtles.com/2018-01-09-DataFrame_plot.png)
+![DataFrame plot](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-09-DataFrame_plot.png)
 
 `DataFrame`的`plot`方法常用的参数如下：
-![DataFrame plot method](http://images.wiseturtles.com/2018-01-09-DataFrame_plot_method_args.png)
+![DataFrame plot method](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-09-DataFrame_plot_method_args.png)
 
 
 ### 条形图(Bar Plots)
@@ -105,7 +105,7 @@ dtype: float64
 <matplotlib.axes._subplots.AxesSubplot at 0x10be498d0>
 
 ```
-![Series plot bar](http://images.wiseturtles.com/2018-01-09-Series_plot_bar.png)
+![Series plot bar](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-09-Series_plot_bar.png)
 
 `DataFrame`在做柱状图时会自动按照列分组
 
@@ -126,7 +126,7 @@ six    0.556651  0.721578  0.857398  0.939181
 
 >>> df.plot.bar()
 ```
-![DataFrame plot bar](http://images.wiseturtles.com/2018-01-09-DataFrame_plot_bar_vertical.png)
+![DataFrame plot bar](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-09-DataFrame_plot_bar_vertical.png)
 
 我们可以可以通过参数`stacked=True`来创建堆叠的柱状图
 
@@ -134,7 +134,7 @@ six    0.556651  0.721578  0.857398  0.939181
 >>> df.plot.barh(stacked=True, alpha=0.5)
 ```
 
-![DataFrame plot barh](http://images.wiseturtles.com/2018-01-09-DataFrame_plot_barh.png)
+![DataFrame plot barh](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-09-DataFrame_plot_barh.png)
 
 
 **小贴士**:
@@ -169,7 +169,7 @@ six    0.556651  0.721578  0.857398  0.939181
 >>> s.value_counts().plot.bar()
 ```
 
-![](http://images.wiseturtles.com/2018-01-09-Series_plot_bar_value_counts.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-09-Series_plot_bar_value_counts.png)
 
 
 让我们来看一个统计聚会人数多少和星期几的关系,
@@ -243,7 +243,7 @@ Thur  0.827586  0.068966  0.086207  0.017241
 party_pcts.plot.bar()
 ```
 
-![](http://images.wiseturtles.com/2018-01-09-tips_figure.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-09-tips_figure.png)
 
 从上图可以看出，周末的时候，聚会人数(size)多的是在周末。
 
@@ -265,7 +265,7 @@ party_pcts.plot.bar()
 
 >>> sns.barplot(x='tip_pct', y='day', data=tips, orient='h')
 ```
-![](http://images.wiseturtles.com/2018-01-09-seaborn_barplot.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-09-seaborn_barplot.png)
 
 我们还可以通过`hue`参数来让它来添加额外的分类
 
@@ -273,7 +273,7 @@ party_pcts.plot.bar()
 >>> sns.barplot(x='tip_pct', y='day', hue='time', data=tips, orient='h')
 ```
 
-![](http://images.wiseturtles.com/2018-01-09-seaborn_bar_plot_hue.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-09-seaborn_bar_plot_hue.png)
 
 我们还可以改变`searborn`的绘图样式
 
@@ -414,14 +414,14 @@ Name: tip_pct, dtype: int64
 >>> tips['tip_pct'].plot.hist(bins=50)
 <matplotlib.axes._subplots.AxesSubplot at 0x12607ce10>
 ```
-![](http://images.wiseturtles.com/2018-01-09-seaborn_plot_hist.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-09-seaborn_plot_hist.png)
 
 ```python
 >>> tips['tip_pct'].plot.density()
 <matplotlib.axes._subplots.AxesSubplot at 0x12607ce10>
 ```
 
-![](http://images.wiseturtles.com/2018-01-09-seaborn_plot_density.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-09-seaborn_plot_density.png)
 
 使用`searborn`的`distplot`方法更简便，可以同时在一个图里绘制柱状图和密度曲线
 
@@ -435,7 +435,7 @@ Name: tip_pct, dtype: int64
 >>> sns.distplot(values, bins=100, color='k')
 <matplotlib.axes._subplots.AxesSubplot at 0x120e1c588>
 ```
-![](http://images.wiseturtles.com/2018-01-09-searborn_distplot.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-09-searborn_distplot.png)
 
 
 ### 散点图或点图(Scatter or Point Plots)
@@ -463,7 +463,7 @@ Name: tip_pct, dtype: int64
 >>> plt.title('Changes in log %s versus log %s' % ('m1', 'unemp'))
 Text(0.5,1,'Changes in log m1 versus log unemp')
 ```
-![](http://images.wiseturtles.com/2018-01-09-seaborn_regplot.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-09-seaborn_regplot.png)
 
 使用`pairplot`函数可以绘制散点图矩阵
 
@@ -471,7 +471,7 @@ Text(0.5,1,'Changes in log m1 versus log unemp')
 >>> sns.pairplot(trans_data, diag_kind='kde', plot_kws={'alpha': 0.2})
 <seaborn.axisgrid.PairGrid at 0x12760e0b8>
 ```
-![](http://images.wiseturtles.com/2018-01-09-seaborn_pairplot.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-09-seaborn_pairplot.png)
 
 
 ### 多面网格和类别数据(Facet Grids and Categorical Data)
@@ -490,7 +490,7 @@ Text(0.5,1,'Changes in log m1 versus log unemp')
 <seaborn.axisgrid.FacetGrid at 0x12724b390>
 ```
 
-![](http://images.wiseturtles.com/2018-01-09-seaborn_factorplot.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-09-seaborn_factorplot.png)
 
 除了按照`time`作为bar分组之外，我们还可以通过添加参数`row=time`添加额外的面
 
@@ -498,7 +498,7 @@ Text(0.5,1,'Changes in log m1 versus log unemp')
 >>> sns.factorplot(x='day', y='tip_pct', row='time', col='smoker', kind='bar', data=tips[tips.tip_pct < 1])
 <seaborn.axisgrid.FacetGrid at 0x1261bc6d8>
 ```
-![](http://images.wiseturtles.com/2018-01-09-seaborn_factorplot_rows.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-09-seaborn_factorplot_rows.png)
 
 `factorplot`还支持一些其它的绘图参数, 如绘制box图
 
@@ -506,7 +506,7 @@ Text(0.5,1,'Changes in log m1 versus log unemp')
 >>> sns.factorplot(x='tip_pct', y='day', kind='box', data=tips[tips.tip_pct < 0.5])
 <seaborn.axisgrid.FacetGrid at 0x127caeac8>
 ```
-![](http://images.wiseturtles.com/2018-01-09-seaborn_factorplot_kind.png)
+![](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2018-01-09-seaborn_factorplot_kind.png)
 
 
 ## 其它的python可视化工具

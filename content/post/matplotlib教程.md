@@ -36,7 +36,7 @@ plt.plot(x, y)
 # 让图片显示
 plt.show()
 ```
-![效果图](http://images.wiseturtles.com/2017-12-25-line.png)
+![效果图](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-25-line.png)
 
 <!--more-->
 
@@ -67,8 +67,8 @@ plt.plot(x, y1, color='red', linewidth=1.0, linestyle='--')
 plt.show()
 ```
 
-![Figure 1](http://images.wiseturtles.com/2017-12-25-figure_1.png)
-![Figure 3](http://images.wiseturtles.com/2017-12-25-figure_3.png)
+![Figure 1](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-25-figure_1.png)
+![Figure 3](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-25-figure_3.png)
 
 ### 设置x,y轴的坐标和标签
 
@@ -103,7 +103,7 @@ plt.yticks([-2, -1.8, -1, 1.22, 3],
 
 plt.show()
 ```
-![Figure with custom ticks](http://images.wiseturtles.com/2017-12-25-figsize_ticks.png)
+![Figure with custom ticks](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-25-figsize_ticks.png)
 
 ### 设置x,y轴的坐标原点位置和x,y轴的刻度位置
 
@@ -151,7 +151,7 @@ ax.spines['left'].set_position(('data', 0))
 plt.show()
 ```
 
-![change figure current axis](http://images.wiseturtles.com/2017-12-25-figure_gca.png)
+![change figure current axis](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-25-figure_gca.png)
 
 
 ### 添加图例(legend)
@@ -184,7 +184,7 @@ l2, = plt.plot(x, y1, color='red', linewidth=1.0, linestyle='--', label='down')
 plt.legend(handles=[l1, l2], labels=['aaa', 'bbb'], loc='best')
 ```
 
-![figure with legend](http://images.wiseturtles.com/2017-12-25-figure_legend.png)
+![figure with legend](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-25-figure_legend.png)
 
 ### 添加标注(Annotation)
 
@@ -233,7 +233,7 @@ plt.text(
 
 plt.show()
 ```
-![annotate](http://images.wiseturtles.com/2017-12-25-Figure_annotate.png)
+![annotate](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-25-Figure_annotate.png)
 
 ### 能见度(tick)
 
@@ -271,7 +271,7 @@ for label in ax.get_xticklabels() + ax.get_yticklabels():
 
 plt.show()
 ```
-![figure tick](http://images.wiseturtles.com/2017-12-25-figure_tick.png)
+![figure tick](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-25-figure_tick.png)
 
 
 ## 画图的种类
@@ -298,7 +298,7 @@ plt.yticks(())
 
 plt.show()
 ```
-![figure scatter](http://images.wiseturtles.com/2017-12-25-Figure_scatter.png)
+![figure scatter](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-25-Figure_scatter.png)
 
 
 ### Bar柱状图
@@ -335,7 +335,7 @@ plt.yticks(())
 plt.show()
 ```
 
-![figure bar](http://images.wiseturtles.com/2017-12-25-Figure_bar.png)
+![figure bar](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-25-Figure_bar.png)
 
 ### Contours 等高线图
 
@@ -373,7 +373,7 @@ plt.yticks(())
 plt.show()
 ```
 
-![figure contours](http://images.wiseturtles.com/2017-12-25-Figure_Contours.png)
+![figure contours](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-25-Figure_Contours.png)
 
 ### Image图片
 ```python
@@ -398,7 +398,7 @@ plt.xticks(())
 plt.yticks(())
 plt.show()
 ```
-![figure image](http://images.wiseturtles.com/2017-12-25-Figure_image.png)
+![figure image](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-25-Figure_image.png)
 
 
 ### 3D图像
@@ -426,7 +426,7 @@ ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap=plt.get_cmap('rainbow'))
 ax.contourf(X, Y, Z, zdir='z', offset=-2, cmap=plt.get_cmap('rainbow'))
 plt.show()
 ```
-![figure 3d](http://images.wiseturtles.com/2017-12-25-Figure_3d.png)
+![figure 3d](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-25-Figure_3d.png)
 
 
 ## 多图合并显示（subplot）
@@ -455,7 +455,7 @@ plt.plot([0, 1], [0, 4])
 
 plt.show()
 ```
-![figure subplot 1](http://images.wiseturtles.com/2017-12-26-Figure_subplot_1.png)
+![figure subplot 1](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-26-Figure_subplot_1.png)
 
 #### 不均匀分割
 
@@ -480,7 +480,7 @@ plt.plot([0, 1], [0, 4])
 
 plt.show()
 ```
-![figure subplot 2](http://images.wiseturtles.com/2017-12-26-Figure_subplot_2.png)
+![figure subplot 2](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-26-Figure_subplot_2.png)
 
 ### 分格显示
 
@@ -507,7 +507,7 @@ ax5.set_title("ax5 title")
 
 plt.show()
 ```
-![figure subplot2grid](http://images.wiseturtles.com/2017-12-26-Figure_subplot2grid.png)
+![figure subplot2grid](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-26-Figure_subplot2grid.png)
 
 #### 方法2: gridspec
 ```python
@@ -538,7 +538,7 @@ ax5.set_title("ax5 title")
 plt.show()
 ```
 
-![figure gridspec](http://images.wiseturtles.com/2017-12-26-figure_gridspec.png)
+![figure gridspec](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-26-figure_gridspec.png)
 
 #### 方法3: subplots
 
@@ -561,7 +561,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![figure subplots](http://images.wiseturtles.com/2017-12-26-Figure_subplots.png)
+![figure subplots](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-26-Figure_subplots.png)
 
 ### 图中图
 
@@ -604,7 +604,7 @@ plt.title('title inside 2')
 
 plt.show()
 ```
-![figure insiede](http://images.wiseturtles.com/2017-12-26-Figure_inside.png)
+![figure insiede](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-26-Figure_inside.png)
 
 ### 次坐标轴
 
@@ -632,7 +632,7 @@ ax2.set_ylabel('Y2 data', color='b')
 
 plt.show()
 ```
-![figure twinx](http://images.wiseturtles.com/2017-12-26-Figure_twinx.png)
+![figure twinx](https://cdn.jsdelivr.net/gh/crazygit/static@main/img/2017-12-26-Figure_twinx.png)
 
 ## 动画(Animation)
 
@@ -681,7 +681,7 @@ plt.show()
 ```
 
 {%
-iframe http://images.wiseturtles.com/basic_animation.mp4 100% 100%
+iframe https://cdn.jsdelivr.net/gh/crazygit/static@main/img/basic_animation.mp4 100% 100%
 %}
 
 ## 扩展阅读

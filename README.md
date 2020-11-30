@@ -13,7 +13,7 @@
 
 ```bash
 $ hugo version
-Hugo Static Site Generator v0.48/extended darwin/amd64 BuildDate: unknown
+Hugo Static Site Generator v0.78.2/extended darwin/amd64 BuildDate: unknown
 ```
 
 ## 参考

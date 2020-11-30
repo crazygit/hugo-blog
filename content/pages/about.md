@@ -13,5 +13,3 @@ contentCopyright: false
 {{< blockquote >}}
 写作是与自己心灵的交流！
 {{< /blockquote >}}
-
-{{< instagram BV2WqHGh0sE hidecaption >}}
